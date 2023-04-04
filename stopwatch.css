@@ -8,13 +8,11 @@ body{
     /* background-size:cover; */
     background-size: 100% auto;
     background-repeat: no-repeat;
-    border: 2px solid red;
 }
 #body-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 2px solid orange;
 }
 #logo-head-theme-div{
     display: flex;
@@ -23,7 +21,6 @@ body{
     align-items: center;
     margin-bottom: 7rem;
     width: 100%;
-    border: 2px solid pink;
 }
 img{
     height: 4rem;
@@ -39,7 +36,6 @@ img{
     width: 2rem;
 }
 #main-container{
-    border: 2px solid purple;
     height: 16rem;
     /* width: 44rem; */
     display: flex;

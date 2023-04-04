@@ -123,7 +123,7 @@ let imgUrl=1;
 themeSwitch.addEventListener('click',function changeImage(){
     console.log(window.matchMedia("(max-width:600px").matches);
     if(imgUrl==1){
-        if(window.matchMedia("(max-width:600px")){
+        if(window.matchMedia("(max-width:600px").matches){
             document.body.style.backgroundImage= "url('./Images/mob-back-medium.jpg')";
         }else{
             document.body.style.backgroundImage= "url('./Images/stopwatch_light2.jpg')";
@@ -133,7 +133,7 @@ themeSwitch.addEventListener('click',function changeImage(){
        imgUrl=2;
     }else{
         if(imgUrl==2){
-            if(window.matchMedia("(max-width:600px")){
+            if(window.matchMedia("(max-width:600px").matches){
                 document.body.style.backgroundImage= "url('./Images/mob-back-light.jpeg')";
             }else{
                 document.body.style.backgroundImage= "url('./Images/stopwatch_light3.jpg')";
@@ -142,7 +142,7 @@ themeSwitch.addEventListener('click',function changeImage(){
             document.getElementById('timer').style.color='green';
             imgUrl=3;
         }else{
-            if(window.matchMedia("(max-width:600px")){
+            if(window.matchMedia("(max-width:600px").matches){
                 document.body.style.backgroundImage= "url('./Images/mob-back-dark.jpg')";
             }else{
                 document.body.style.backgroundImage= "url('./Images/watch-background.avif')";
