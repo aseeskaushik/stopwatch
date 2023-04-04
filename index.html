@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="shortcut icon" href="./Images/favicon.png" type="image/x-icon">
+    <title>Online Stopwatch</title>
+</head>
+<body>
+    <div id="body-container">
+         
+        <!-- Heading -->
+        <div id="logo-head-theme-div">
+            <div><img src="./Images/ak.webp" alt="logo"></div>
+            <div><h1 id="heading">Stopwatch</h1></div>
+            <div>
+                <img id="theme-image" src="./Images/theme_img.jpg" alt="logo" class="sound-and-theme">
+                <img id="sound-image" src="./Images/nosound.webp" alt="tik-tik" class="sound-and-theme">
+            </div>
+        </div>
+
+        <div  id="main-container">
+
+            <!-- timer div -->
+            <div id="timer">
+                <!-- displaying hours -->
+                <div>
+                    <span><span id="hours">00</span>hr</span>
+                </div>
+                <!-- displaying minutes -->
+                <div>
+                    <span><span id="minutes">00</span>min</span>
+                </div>
+                <!-- displaying seconds -->
+                <div>
+                    <span><span id="seconds">00</span>sec</span>
+                    <audio hidden id="audio">
+                        <source src="./sounds/clock-tick-tock-87936.mp3" type="audio/ogg">
+                    </audio>
+                </div>
+                <!-- displaying milliseconds -->
+                <div>
+                    <span><span id="milliseconds">00</span></span>
+                    
+                </div>
+            </div>
+
+            <!-- buttons conatiner div -->
+            <div id="buttons-container-div">
+                <!-- button to start stopwatch -->
+               <button id="Start-button">Start</button>
+
+               <!-- button to stop stopwatch -->
+               <button id="Stop-button">Stop</button>
+
+               <!-- button to reset stopwatch -->
+               <button id="Reset-button" type="reset">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="stopwatch.js"></script>
+</body>
+</html>

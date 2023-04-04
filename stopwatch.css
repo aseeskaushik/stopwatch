@@ -1,0 +1,87 @@
+*{
+    margin: 0rem;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background-image: url('./Images/watch-background.avif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#body-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    /* opacity: 0.8; */
+}
+#logo-head-theme-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 7rem;
+    width: 100vw;
+}
+img{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+}
+#heading{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.sound-and-theme{
+    height: 2rem;
+    width: 2rem;
+}
+#main-container{
+    /* border: 2px solid grey; */
+    height: 16rem;
+    width: 44rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#timer{
+    font-size: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:baseline;
+    color: aqua;
+}
+#timer div{
+    margin-right: 0.8rem;
+}
+#timer div span{
+    font-size: 1rem;
+    margin-left: 0rem;
+}
+#timer div span span{
+    font-size: 7rem;
+}
+#timer div span #milliseconds{
+    font-size: 2rem;
+}
+button{
+    height: 2rem;
+    width: 4rem;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+div #Start-button{
+    background-color: #4aae71;
+}
+div #Stop-button{
+    background-color: #e31717;
+}
+div #Reset-button{
+    background-color: #fbad10;
+}
+button:hover{
+    opacity: 0.8;
+}
