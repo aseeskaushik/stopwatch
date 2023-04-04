@@ -5,15 +5,16 @@
 }
 body{
     background-image: url('./Images/watch-background.avif');
+    /* background-size:cover; */
+    background-size: 100% auto;
     background-repeat: no-repeat;
-    background-size: cover;
+    /* border: 2px solid red; */
 }
 #body-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    /* opacity: 0.8; */
+    /* border: 2px solid orange; */
 }
 #logo-head-theme-div{
     display: flex;
@@ -21,7 +22,8 @@ body{
     justify-content: space-between;
     align-items: center;
     margin-bottom: 7rem;
-    width: 100vw;
+    width: 100%;
+    /* border: 2px solid pink; */
 }
 img{
     height: 4rem;
@@ -37,9 +39,9 @@ img{
     width: 2rem;
 }
 #main-container{
-    /* border: 2px solid grey; */
+    /* border: 2px solid purple; */
     height: 16rem;
-    width: 44rem;
+    /* width: 44rem; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -72,6 +74,7 @@ button{
     color: white;
     border-radius: 8px;
     border: none;
+    font-size: 1rem;
 }
 div #Start-button{
     background-color: #4aae71;
@@ -84,4 +87,23 @@ div #Reset-button{
 }
 button:hover{
     opacity: 0.8;
+}
+
+/* media queries for responsiveness */
+
+@media only screen and (max-width: 998px) {
+   html{
+    font-size:  75%;
+   }
+}
+
+@media only screen and (max-width: 768px) {
+    html{
+        font-size: 63%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 42%;
+    }
 }
