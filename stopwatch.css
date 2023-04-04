@@ -8,13 +8,13 @@ body{
     /* background-size:cover; */
     background-size: 100% auto;
     background-repeat: no-repeat;
-    /* border: 2px solid red; */
+    border: 2px solid red;
 }
 #body-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 2px solid orange; */
+    border: 2px solid orange;
 }
 #logo-head-theme-div{
     display: flex;
@@ -23,7 +23,7 @@ body{
     align-items: center;
     margin-bottom: 7rem;
     width: 100%;
-    /* border: 2px solid pink; */
+    border: 2px solid pink;
 }
 img{
     height: 4rem;
@@ -39,7 +39,7 @@ img{
     width: 2rem;
 }
 #main-container{
-    /* border: 2px solid purple; */
+    border: 2px solid purple;
     height: 16rem;
     /* width: 44rem; */
     display: flex;
@@ -99,11 +99,15 @@ button:hover{
 
 @media only screen and (max-width: 768px) {
     html{
-        font-size: 63%;
+        font-size: 68%;
     }
 }
 @media only screen and (max-width: 600px) {
     html{
-        font-size: 42%;
+        font-size: 48%;
+    }
+    body{
+        background-image: url('./Images/mob-back-dark.jpg');
+        background-size: cover;
     }
 }

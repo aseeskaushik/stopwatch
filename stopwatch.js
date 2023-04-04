@@ -121,19 +121,32 @@ themeSwitch= document.getElementById('theme-image');
 bodyContainerDiv= document.getElementById('body-container');
 let imgUrl=1;
 themeSwitch.addEventListener('click',function changeImage(){
+    console.log(window.matchMedia("(max-width:600px").matches);
     if(imgUrl==1){
-       document.body.style.backgroundImage= "url('./Images/stopwatch_light2.jpg')";
+        if(window.matchMedia("(max-width:600px")){
+            document.body.style.backgroundImage= "url('./Images/mob-back-medium.jpg')";
+        }else{
+            document.body.style.backgroundImage= "url('./Images/stopwatch_light2.jpg')";
+        }
        document.getElementById('heading').style.color= 'black';
        document.getElementById('timer').style.color='rgb(255 255 255)';
        imgUrl=2;
     }else{
         if(imgUrl==2){
-            document.body.style.backgroundImage= "url('./Images/stopwatch_light3.jpg')";
+            if(window.matchMedia("(max-width:600px")){
+                document.body.style.backgroundImage= "url('./Images/mob-back-light.jpeg')";
+            }else{
+                document.body.style.backgroundImage= "url('./Images/stopwatch_light3.jpg')";
+            }
             document.getElementById('heading').style.color= 'black';
             document.getElementById('timer').style.color='green';
             imgUrl=3;
         }else{
-            document.body.style.backgroundImage= "url('./Images/watch-background.avif')";
+            if(window.matchMedia("(max-width:600px")){
+                document.body.style.backgroundImage= "url('./Images/mob-back-dark.jpg')";
+            }else{
+                document.body.style.backgroundImage= "url('./Images/watch-background.avif')";
+            }
             document.getElementById('heading').style.color= 'white';
             document.getElementById('timer').style.color='aqua';
             imgUrl=1;
