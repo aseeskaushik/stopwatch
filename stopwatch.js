@@ -12,7 +12,7 @@ let resetButton= document.getElementById('Reset-button');
 // creating variables to display numbers less than 10
 let countcalc,secCalc,minCalc,hrCalc;
 
-// to start or stop second hand sound
+// to start or stop second hand sound~
 let soundImg=1;
 document.getElementById('sound-image').addEventListener('click',function startAudio(){
     if(soundImg){
