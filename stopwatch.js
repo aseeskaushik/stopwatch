@@ -9,7 +9,7 @@ let startButton= document.getElementById('Start-button');
 let stopButton= document.getElementById('Stop-button');
 let resetButton= document.getElementById('Reset-button');
 
-// creating variables to display numbers less than 10
+// creating variables to display numbers less than 10 in XX
 let countcalc,secCalc,minCalc,hrCalc;
 
 // to start or stop second hand sound~
@@ -25,6 +25,7 @@ document.getElementById('sound-image').addEventListener('click',function startAu
 })
 
 // adding event listeners to start button
+// millisecond is just count
 
 startButton.addEventListener('click',startClock,{ once: true });
 
@@ -118,7 +119,6 @@ function startClock(){
 
 // To switch between dark, white and light themes
 themeSwitch= document.getElementById('theme-image');
-bodyContainerDiv= document.getElementById('body-container');
 let imgUrl=1;
 themeSwitch.addEventListener('click',function changeImage(){
     console.log(window.matchMedia("(max-width:600px").matches);
